@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ's - Gordon Resort Hotel</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/media/favicon.png" type="image/x-icon">
+
+    <!-- Favicon -->
+    <script src="https://kit.fontawesome.com/344589b924.js" crossorigin="anonymous"></script>
+
+    <!-- Semantic UI CDN -->
+    <link href="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
+</head>
+<body>
+
+    <!-- Loader -->
+    <!-- <div class="loader-div" id="loader-div">
+        <div class="spinner">
+        </div>
+    </div> -->
+
+    <!-- End Loader -->
+
+   <!-- Header Navigation -->
+   <nav>
+    <div class="container">
+    <div class="row">
+    <header class="header">
+        <div class="header-left">
+            <a href="./index.html">
+                <img class="logo" src="./assets/media/logo.png" alt="grh-logo">
+            </a>
+        </div>
+
+        <div class="header-right">
+            <div class="nav-menu" id="navi-menu">
+            <ul class="nav-items">
+                <li class="list-items" ><a class="header-link" href="./index.html">Home</a></li>
+                <li class="list-items"><a class="header-link" href="./about.html">About</a></li>
+                <li class="list-items"><a class="header-link" href="./gallery.html">Gallery</a></li>
+                <li class="list-items"><a class="header-link"  href="./rooms.html">Rooms</a></li>
+                <li class="list-items"><a class="header-link"  href="./amenities.html">Amenities</a></li>
+                <li class="list-items"><a class="header-link"  href="./bookings.html">Bookings</a></li>
+                <li class="list-items"><a class="header-link" id="active-nav" href="./faqs.html">FAQs</a></li>
+            </ul>
+            <div class = "vertical"></div>
+            <button class="head-btn" onclick="window.location.href = './contact.html'">Contact Us</button> 
+            </div>
+        
+       
+
+          
+         <!-- Mobile Menu -->
+         <div class="mobile-menu" id="hamburger">
+            <i id="openMenu" class="fa-solid fa-bars fa-2xl" style="color: #2c333d;"></i>
+            <i id="closeMenu" class="hide fa-solid fa-x fa-2xl " style="color: #2c333d;"></i>
+        </div>
+        </div>
+    </header>
+    </div>
+    </div>
+</nav>
+   <!-- End Header -->
+
+
+<!-- Breadcrumb -->
+<section class="breadcrumb-section">
+    <div class="container" id="breadcrumb-cont">
+        <div class="row" id="breadcrumb-row">
+            <div class="col-12" id="breadcrumb-col">
+                <h1 class="page-title">FAQ's</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- End Breadcrumb -->
+
+<!-- Faqs section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" id="left-abt-col">
+                    <h2 class="header-h2 text-center">FAQ's</h2>
+                    
+
+                    <div class="accordion-content">
+
+
+                        <div>
+                          <input type="checkbox" id="question1" name="q"  class="questions">
+                          <div class="plus">+</div>
+                          <label for="question1" class="question">
+                            What are your check in and check out times?
+                          </label>
+                          <div class="answers">
+                            Guests can check in from 1pm and are expected to check out latest 12noon following day.</div>
+                        </div>
+                        
+                        <div>
+                          <input type="checkbox" id="question2" name="q" class="questions">
+                          <div class="plus">+</div>
+                          <label for="question2" class="question">
+                            Are there connecting rooms?
+                          </label>
+                          <div class="answers">
+                           There are currently no connecting rooms but <a style="color: #FBB03B" href="./cottage.html">Cottage</a>  has 2 bedrooms.
+                          </div>
+                        </div>
+                          
+                        <div>
+                          <input type="checkbox" id="question3" name="q" class="questions">
+                          <div class="plus">+</div>
+                          <label for="question3" class="question">
+                            Is there wifi available?  
+                          </label>
+                          <div class="answers">
+                            At this point, we do not have wifi service.
+                          </div>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" id="question4" name="q" class="questions">
+                            <div class="plus">+</div>
+                            <label for="question4" class="question">
+                            What is your cancellation and refund policy?
+                            </label>
+                            <div class="answers">
+                                Guests who cancel before 6pm are entitled to full refund, otherwise, deposit will be forfeited.
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" id="question5" name="q" class="questions">
+                            <div class="plus">+</div>
+                            <label for="question5" class="question">
+                            How do i go about reservations?
+                            </label>
+                            <div class="answers">
+                            Reservations can be made via our <a style="color: #FBB03B" href="./bookings.html">bookings </a>page, or by<a style="color: #FBB03B" href="mailto:info@gordonresorthotel.com"> email</a> or via our dedicated <a style="color: #FBB03B" href="tel:+2349157031699"> telephone </a>lines.
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" id="question6" name="q" class="questions">
+                            <div class="plus">+</div>
+                            <label for="question6" class="question">
+                            Are pets permitted?
+                            </label>
+                            <div class="answers">
+                            Currently, pets are prohibited. 
+                            </div>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="question7" name="q" class="questions">
+                            <div class="plus">+</div>
+                            <label for="question7" class="question">
+                            What am i allowed access to as a guest Is laundry in my booking?
+                            </label>
+                            <div class="answers">
+                                Guests are entitled to free access to beach for maximum of 2 persons per room and free access to the nightclub.
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <input type="checkbox" id="question8" name="q" class="questions">
+                            <div class="plus">+</div>
+                            <label for="question8" class="question">
+                            Is laundry an amenity in my booking?
+                            </label>
+                            <div class="answers">
+                              Laundry services are not inlcuded in your room packages, so you would have to pay for that per use
+                            </div>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="question9" name="q" class="questions">
+                            <div class="plus">+</div>
+                            <label for="question9" class="question">
+                            Am i allowed to bring my food / drinks to the beach?
+                            </label>
+                            <div class="answers">
+                                Guests may bring their own food but own drinks are subject to corkage.
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                
+
+                
+            </div>
+        </div>
+    </section>
+<!-- Faqs Section end-->
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row" id="footer-row">
+                <div class="col-12 col-lg-4">
+                    <img class="footer-logo" src="./assets/media/footer-logo.png" alt="footer-logo">
+                    <p class="footer-text">Gordon Resort Hotel popularly known as McCarthy Beach is located in the University town of Abraka in Delta State.
+                        Set out in large expanse of land of over 65 hectares the resort boasts 60 exquisitely appointed and tastefully furnished Rooms/Suites. 
+                    </p>
+                </div>
+                <div class="col-12 col-lg-4 ">
+                    <h6 class="footer-header">
+                        Quick Links
+                    </h6>
+
+                    <ul class="footer-links">
+                        <li class="list-items" ><a class="footer-nav" href="./index.html">Home</a></li>
+                        <li class="list-items"><a class="footer-nav" href="./about.html">About</a></li>
+                        <li class="list-items"><a class="footer-nav" href="./gallery.html">Gallery</a></li>
+                        <li class="list-items"><a class="footer-nav"  href="./rooms.html">Rooms</a></li>
+                        <li class="list-items"><a class="footer-nav" href="./amenities.html">Amenities</a></li>
+                        <li class="list-items"><a class="footer-nav"  href="./bookings.html">Bookings</a></li>
+                        <li class="list-items"><a class="footer-nav"  href="./contact.html">Contact</a></li>
+                        <li class="list-items"><a class="footer-nav" id="active-nav" href="./faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <h6 class="footer-header">
+                        Legal Information
+                    </h6>
+                    <p class="footer-link"><a href="./privacy-policy.html">Privacy Policy</a></p>
+
+                </div>
+            </div>
+
+            <!-- copyright -->
+            <div class="row" id="copyright-row">
+                <div class="col-12" id="copyright-col">
+                    <p class="copyright-text"> 
+                        Gordon Resort Hotel &copy; <span id="year"></span> All Rights Reserved.<br> Powered By <a class="footer-link" href="https://oviematthew.com" target="_blank">Ovie</a> of <a class="footer-link" href="https://instagram.com/anomali_tech" target="_blank">Anomali Tech </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+   </footer>
+   <!-- Footer End -->
+
+   <!-- Back to top button -->
+<button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+    
+    <!-- JS -->
+   <script src="./assets/js/index.js"></script>
+
+    <script src="/assets/bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
