@@ -1412,7 +1412,7 @@ input[type=text] {
 #cookieNotice.display-right {
     left: 20px;
     bottom: 20px;
-    max-width: 280px;
+    width: 350px;
 }
 #cookieNotice {
     box-sizing: border-box;
@@ -1471,6 +1471,14 @@ input[type=text] {
     color: var(--white);
     border: 1px solid var(--primary-color);
     border-radius: 5px;
+}
+
+@media screen and (max-width: 900px) {
+    #cookieNotice.display-right {
+        left: 20px;
+        bottom: 20px;
+        max-width: 280px;
+    }
 }
 /* End Footer */
 
