@@ -692,8 +692,7 @@ input[type=text] {
 
 #left-abt-col {
     display: flex;
-    justify-content: center !important;
-    align-items: center !important;
+    justify-content: center;
 }
 
 #right-abt-col {
