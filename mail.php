@@ -43,13 +43,13 @@ $message .= 'Custom needs : ' . $comments . "\n";
 if (@mail($to, $subject, $message, $email_from))
 {
 	// Transfer the value 'sent' to ajax function for showing success message.
-	header("Location: index.html");
+	header("Location: success.html");
     
     
 }
 else
 {
 	// Transfer the value 'failed' to ajax function for showing error message.
-	header("Location: bookings.html");
+	header("Location: failed.html");
 }
 ?>

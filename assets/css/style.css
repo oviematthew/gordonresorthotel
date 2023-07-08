@@ -237,6 +237,8 @@ li a {
         align-items: center;
         margin-right: 30px;
     }
+
+    
   } 
 
 .head-btn {
@@ -289,7 +291,9 @@ li a {
        
     }
 
-
+    #closeMenu {
+        color: var(--white) !important;
+    }
 
     .header {
         display: flex;
@@ -303,8 +307,12 @@ li a {
         display: block;
     }
 
-    .nav-items > .list-items > #active-nav {
+    .nav-items > .list-items  {
         color: var(--white) !important;
+      }
+
+    .nav-items > .list-items > #active-nav {
+        color: var(--primary-color) !important;
       }
 
     .nav-items {
@@ -316,7 +324,9 @@ li a {
     .nav-items > .list-items {
         padding-bottom: 40px;
     }
-
+    .header-link {
+        color: var(--white) !important;
+    }
     #navi-menu {
         display: flex;
         flex-direction: column;
@@ -327,8 +337,8 @@ li a {
         right: -50%;
         width: 50%;
         height: 100vh; 
-        color: var(--text-color);
-        background-color: var(--primary-color);
+        color: var(--white);
+        background-color: var(--text-color);
         transition: all 0.1s ease-in-out;
     }
 
@@ -347,8 +357,8 @@ li a {
         right: 0;
         width: 60%;
         height: 100vh; 
-        color: var(--text-color);
-        background-color: var(--primary-color);
+        color: var(--primary-color);
+        background-color: var(--text-color);
         overflow-x: hidden;
     }
 
@@ -682,7 +692,8 @@ input[type=text] {
 
 #left-abt-col {
     display: flex;
-    justify-content: center;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 #right-abt-col {
@@ -708,10 +719,10 @@ input[type=text] {
 
 
 .yellow-btn {
-    width: 140px;
+    width: 150px;
     height: 50px;
     border-radius: 10px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     color: var(--white);
     background-color: var(--primary-color);
@@ -992,7 +1003,7 @@ input[type=text] {
 /* Beach Section */
 .beach-section {
     height: max-content;
-    padding: 100px 20px;
+    padding: 80px 20px;
     width: 100vw;
 }
 
@@ -1250,7 +1261,7 @@ input[type=text] {
 
 .review-section {
     height: max-content;
-    padding: 100px 20px;
+    padding: 80px 20px;
     background-color: var(--light-grey);
 }
 
@@ -1558,7 +1569,7 @@ input[type=text] {
 
 .about-section {
     height: max-content;
-    padding: 100px 20px;
+    padding: 80px 20px;
 }
 
 #left-abt-col {
@@ -1601,6 +1612,12 @@ input[type=text] {
 	justify-content: center;
 	align-items: center;
 }
+
+.gallery-video {
+    margin-bottom: 40px;
+}
+
+
 .grid-wrapper > div > img {
 	width: 100%;
 	height: 100%;
@@ -1786,9 +1803,13 @@ input[type=text] {
 /* Rooms & Suites Page */
 .rooms-n-suites {
     height: max-content;
-    padding: 100px 20px;
+    padding: 80px 20px;
     background-color: var(--light-grey);
     
+}
+
+#innerPageHeading {
+    margin-bottom: 30px;
 }
 
 #room-row {
@@ -1808,7 +1829,7 @@ input[type=text] {
 }
 
 #left-room-col {
-    padding: 10px;
+    padding: 20px;
     display: flex;
     align-items: center;
 }
@@ -1825,19 +1846,19 @@ input[type=text] {
 }
 
 .price {
-    font-size: 18px;
+    font-size: 16px;
     color: var(--text-color);
 }
 
 .room-page-imgs {
-    width: 600px;
+    width: 100%;
     border-radius: 10px;
     transition: .4s all ease-in-out;
 }
 
 @media screen and (max-width: 1500px) {
     .room-page-imgs {
-        width: 500px;
+        width: 100%;
         border-radius: 10px;
         margin-bottom: 30px;
     }
@@ -1847,7 +1868,7 @@ input[type=text] {
 
 @media screen and (max-width: 1200px) {
     .room-page-imgs {
-        width: 420px;
+        width: 100%;
         border-radius: 10px;
         margin-bottom: 30px;
     }
@@ -1865,14 +1886,18 @@ input[type=text] {
         margin: auto;
         gap: 0;
     }
-    
+    #left-room-col {
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
 
 }
 
 
 @media screen and (max-width: 700px) {
     .room-page-imgs {
-        width: 400px;
+        width: 100%;
         border-radius: 10px;
         margin-bottom: 30px;
     }
@@ -1882,7 +1907,7 @@ input[type=text] {
 
 @media screen and (max-width: 500px) {
     .room-page-imgs {
-        width: 350px;
+        width: 100%;
         border-radius: 10px;
     }
 }
@@ -1890,21 +1915,21 @@ input[type=text] {
 
 @media screen and (max-width: 450px) {
     .room-page-imgs {
-        width: 280px;
+        width: 100%;
         border-radius: 10px;
     }
 }
 
 @media screen and (max-width: 380px) {
     .room-page-imgs {
-        width: 250px;
+        width: 100%;
         border-radius: 10px;
     }
 }
 
 @media screen and (max-width: 350px) {
     .room-page-imgs {
-        width: 220px;
+        width: 100%;
         border-radius: 10px;
     }
 }
@@ -1937,10 +1962,10 @@ input[type=text] {
 
 
 .outline-btn {
-    width: 140px;
+    width: 150px;
     height: 50px;
     border-radius: 10px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     color: var(--text-color);
     background-color: transparent;
@@ -1991,13 +2016,13 @@ input[type=text] {
     }
     
     #right-room-col {
-        margin-left: 20px;
+        padding: 20px;
+        padding-top: 0;
         margin-bottom: 20px;
     }
     
     #room-row{
         padding: 30px;
-        padding-left: 10px;
     }
 
      .facilities img {
@@ -2032,6 +2057,8 @@ input[type=text] {
     width: 600px;
     height: 400px;
     object-fit: cover;
+    display: grid;
+    margin: auto;
     border-radius: 20px;
 }
 
@@ -2395,3 +2422,11 @@ input[type=text] {
       }
   }
 /* Other Room styles end */
+
+/* Form sent styles */
+#form-sent-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
