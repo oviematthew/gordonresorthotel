@@ -4,7 +4,7 @@ $to = 'ovieenams@gmail.com';  //Recipient's E-mail
 
 
 
-$name = $_REQUEST['name'];
+$fullname = $_REQUEST['fullname'];
 $emailaddress = $_REQUEST['emailaddress'];
 $phone = $_REQUEST['phone'];
 $street = $_REQUEST['street'];
