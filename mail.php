@@ -23,7 +23,7 @@ $comments = $_REQUEST['comments'];
 $email_from = $emailaddress;
 
 
-$message .= 'Name : ' . $name . "\n";
+$message .= 'Name : ' . $fullname . "\n";
 $message .= 'Email Address : ' . $emailaddress . "\n";
 $message .= 'Phone Number : ' . $phone . "\n";
 $message .= 'Street: ' . $street  . "\n";
