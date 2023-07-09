@@ -46,6 +46,10 @@
      <!-- Jquery -->
      <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
      <script src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
+
+     <!-- Recaptcha -->
+     <script src="https://www.google.com/recaptcha/api.js" async defer>
+    </script>
  </head>
  <body>
      <!-- Google Tag Manager (noscript) -->
@@ -121,7 +125,7 @@
     <section class="about-section">
         <div class="container">
             
-            <form action="./mail.php" method="post">
+            <form id="bookingForm" action="./mail.php" method="post">
                 <!--  General -->
                 <div class="form-group">
                   <h2 class="header-h2 ">Bookings</h2>
@@ -415,7 +419,11 @@
                         <textarea name="comments" class="floatLabel" id="comments"></textarea>
                         <label for="comments">Please include any custom needs</label>
                         </div>
-                          <button type="submit" value="Submit" class="yellow-btn">Submit</button>
+
+                        <div class="g-recaptcha" data-sitekey="6LdSugwnAAAAANAnCEn4J2SHadWqeV9yqCDZBQt_">
+                        </div>
+
+                          <button id="form-submit-btn" type="submit" value="Submit" class="yellow-btn">Submit</button>
                     </div>  
                 </div> 
                 <!-- /.form-group -->

@@ -228,3 +228,22 @@ const closeCookie = document.getElementById("closeIcon");
 closeCookie.addEventListener("click", function(){
   document.getElementById("cookieNotice").style.display = "none";
 });
+
+
+// recaptcha validation
+document.getElementById("bookingForm").addEventListener("submit",function(evt)
+  {
+  
+  var response = grecaptcha.getResponse();
+  if(response.length == 0) 
+  { 
+    //reCaptcha not verified
+    alert("please verify you are human!"); 
+    evt.preventDefault();
+    return false;
+  }
+  
+  //captcha verified
+  
+  
+});
