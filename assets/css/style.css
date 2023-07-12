@@ -2445,3 +2445,33 @@ input[type=text] {
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (max-width: 1080px) {
+    #form-sent-col:nth-of-type(2){
+        margin-top: 30px;
+    }
+}
+
+
+/* 404 page*/
+.err404head{
+    font-size: 40px !important;
+}
+
+.err404p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.err404img {
+    max-width: 500px;
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+}
+
+@media screen and (max-width: 700px) {
+ 
+    .err404img {
+        max-width: 350px;
+    }
+}
