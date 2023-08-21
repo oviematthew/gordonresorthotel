@@ -231,19 +231,19 @@ closeCookie.addEventListener("click", function(){
 
 
 // recaptcha validation
-document.getElementById("bookingForm").addEventListener("submit",function(evt)
-  {
+// document.getElementById("bookingForm").addEventListener("submit",function(evt)
+//   {
   
-  var response = grecaptcha.getResponse();
-  if(response.length == 0) 
-  { 
-    //reCaptcha not verified
-    alert("please verify you are human!"); 
-    evt.preventDefault();
-    return false;
-  }
+//   var response = grecaptcha.getResponse();
+//   if(response.length == 0) 
+//   { 
+//     //reCaptcha not verified
+//     alert("please verify you are human!"); 
+//     evt.preventDefault();
+//     return false;
+//   }
   
-  //captcha verified
+//   //captcha verified
   
   
-});
+// });
