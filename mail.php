@@ -1,20 +1,11 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Recipient's E-mail
-    $to = 'ovieenams@gmail.com';
+    $to = 'ovieenams@gmail.com'; // Recipient's E-mail
+    $subject = 'BOOKINGS FORM'; // Subject of your email
 
-    // Subject of your email
-    $subject = htmlspecialchars($_POST['subject'], ENT_QUOTES, 'UTF-8');
-
-    // Validate and sanitize email headers
-    $emailaddress = filter_var($_POST['emailaddress'], FILTER_VALIDATE_EMAIL);
-    if (!$emailaddress) {
-        header("Location: failed.html");
-        exit;
-    }
-
-    // Sanitize and escape other form data
+    // Sanitize and escape form data
     $fullname = htmlspecialchars($_POST['fullname'], ENT_QUOTES, 'UTF-8');
+    $emailaddress = htmlspecialchars($_POST['emailaddress'], ENT_QUOTES, 'UTF-8');
     $phone = htmlspecialchars($_POST['phone'], ENT_QUOTES, 'UTF-8');
     $street = htmlspecialchars($_POST['street'], ENT_QUOTES, 'UTF-8');
     $city = htmlspecialchars($_POST['city'], ENT_QUOTES, 'UTF-8');
