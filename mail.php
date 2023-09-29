@@ -15,6 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $depart = htmlspecialchars($_POST['depart'], ENT_QUOTES, 'UTF-8');
     $amtpple = htmlspecialchars($_POST['amtpple'], ENT_QUOTES, 'UTF-8');
     $amtrms = htmlspecialchars($_POST['amtrms'], ENT_QUOTES, 'UTF-8');
+    $rmtype = htmlspecialchars($_POST['rmtype'], ENT_QUOTES, 'UTF-8');
     $comments = htmlspecialchars($_POST['comments'], ENT_QUOTES, 'UTF-8');
 
     // Construct email message
@@ -29,6 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $message .= "Departure Date : $depart\n";
     $message .= "Amount Of Guests : $amtpple\n";
     $message .= "Number Of Rooms : $amtrms\n";
+    $message .= "Type Of Room : $rmtype\n";
     $message .= "Custom needs : $comments\n";
 
     // Additional headers
