@@ -2475,3 +2475,35 @@ input[type=text] {
         max-width: 350px;
     }
 }
+
+/* pricing page styles */
+.table-container {
+    width: 700px;
+    margin: 20px auto;
+  }
+
+  @media screen and (max-width: 700px) {
+    .table-container {
+        width: 400px;
+        margin: 20px auto;
+      }
+  }
+  .table-header {
+    background-color: #FBB03B;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    padding: 8px;
+    display: flex;
+  }
+
+  .item, .unit-price {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  .item-row {
+    display: flex;
+  }
+/* pricing page style end */
