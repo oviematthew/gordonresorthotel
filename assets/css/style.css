@@ -2484,7 +2484,7 @@ input[type=text] {
 
   @media screen and (max-width: 700px) {
     .table-container {
-        width: 400px;
+        width: 300px;
         margin: 20px auto;
       }
   }
