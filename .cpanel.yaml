@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/fajwvff6ygmu/public_html/gordonresorthotel.com
+    - /bin/cp -R * $DEPLOYPATH
