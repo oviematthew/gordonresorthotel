@@ -1,0 +1,10 @@
+# 404
+ErrorDocument 404 /404.html
+
+# ssl redirect
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^gordonresorthotel\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.gordonresorthotel\.com$
+RewriteRule ^/?$ "https\:\/\/gordonresorthotel\.com\/" [R=301,L]
