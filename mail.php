@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $to = 'ovieenams@gmail.com'; // Recipient's E-mail
+    $to = 'info@gordonresorthotel.com'; // Recipient's E-mail
     $subject = 'BOOKINGS FORM'; // Subject of your email
 
     // Sanitize and escape form data
